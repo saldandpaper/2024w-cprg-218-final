@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+}
+
+
+.accordions {
+    background-color: black;
+    padding-bottom: 5rem;
+}
+
+
+
+.accordion {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    color: white;
+
+    & .accordion-checkbox {
+        display: none;
+    }
+
+    & .accordion-checkbox:checked + .accordion-header + .accordion-content {
+        display: block;
+    }
+
+    & .accordion-header {
+        padding: 10px;
+        background-color: #dddddd70;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+
+    & .accordion-header:hover {
+        background-color: #ccccccbb;
+    }
+    
+
+    & .accordion-content {
+        display: none;
+        padding: 10px;
+        background-color: #f1f1f177;
+    }
+}
+
+
+
+
+

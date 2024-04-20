@@ -2,26 +2,52 @@
     background-image: url(https://images.pexels.com/photos/1555813/pexels-photo-1555813.jpeg);
     background-size: cover;
     height: 100dvh;
-    /* width: 100dvw; */
 
-    /* border: red solid 5px; */
+    & table, th, td {
+        border: lime hidden 2px;
+    }
+    
+    & th {
+        height: 5dvh;
+    }
 
-    & b {
-        border: rgb(255, 255, 255) 0.1rem solid;
-        padding: 0.5rem;
-        margin: 0.2rem;
-        background-color: #093009;
-        color: white;
+    & .left-space {
+        width: 5dvh;
     }
 
     & h1 {
         /* border: red solid 2px; */
         width: fit-content;
         position: relative;
-        top: 10vh;
-        left: 10vw;
+        padding: 1.5rem;
+        background-color: #53795c8f;
+        backdrop-filter: blur(1rem);
+        -webkit-backdrop-filter: blur(1rem);
+        flex: 1;
+    }
+}
+
+.navlist {
+    color: white;
+    background-color: #53795c8f;
+    display: flex;
+    flex-flow: column wrap;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    padding: 1rem;
+
+    & a {
+        border-radius: 0.5rem;
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+        background-color: #e0d27f85;
+        margin: 1rem;
         padding: 1rem;
-        background-color: #f0f8ff8f;
-        backdrop-filter: blur(10px);
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            background-color: #857c4e85;
+        }
     }
 }
