@@ -1,0 +1,41 @@
+body {
+    font-family: "Crimson Text", serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+b {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 720px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.footer{
+    color: #f6ff7d;
+    background-color: #151f0d;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: block;
+    
+    & footer {
+        text-align: center;
+    }
+}
